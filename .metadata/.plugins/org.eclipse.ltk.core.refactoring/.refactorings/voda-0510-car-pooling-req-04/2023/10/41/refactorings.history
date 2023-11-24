@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;voda-0510-car-pooling-req-04&apos;&#x0D;&#x0A;- Original project: &apos;voda-0510-car-pooling-req-04&apos;&#x0D;&#x0A;- Original element: &apos;voda-0510-car-pooling-req-04/srcf&apos;" description="Delete element" element1="/srcf" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1697109835850" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+package com.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BankAppEurekaServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BankAppEurekaServiceApplication.class, args);
+	}
+
+}

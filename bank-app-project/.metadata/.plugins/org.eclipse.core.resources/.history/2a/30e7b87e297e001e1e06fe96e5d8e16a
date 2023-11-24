@@ -1,0 +1,26 @@
+package com.demo;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/cards")
+public class CardController {
+	@Autowired
+	private CardRepository cardRepository;
+	
+	@GetMapping("/{cardNumber}")
+	public CardDto getCard(@PathVariable("cardNumber") Long cardNumber){
+		Card card =cardRepository.findByCardNumber(cardNumber);
+		
+		CardDto response =new CardDto();
+		response.setCard(card);
+		
+		return response;
+	}
+
+}

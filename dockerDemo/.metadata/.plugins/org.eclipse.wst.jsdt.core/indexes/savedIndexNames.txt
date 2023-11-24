@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.20.0.RELEASE\dockerDemo\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+455544483.index

@@ -1,0 +1,3 @@
+INDEX VERSION 1.134+C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.20.0.RELEASE\dockerDemo\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+455544483.index

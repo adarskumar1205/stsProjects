@@ -1,0 +1,16 @@
+package com.demo;
+
+import java.util.Date;
+
+public class LoanResponseDto {
+	private Loan loan;
+
+	public Loan getLoan() {
+		return loan;
+	}
+
+	public void setLoan(Loan loan) {
+		this.loan = loan;
+	}
+	
+}

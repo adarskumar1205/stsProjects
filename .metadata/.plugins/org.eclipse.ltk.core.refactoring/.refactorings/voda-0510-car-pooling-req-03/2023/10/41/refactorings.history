@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;voda-0510-car-pooling-req-05_06/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;voda-0510-car-pooling-req-03&apos;&#x0D;&#x0A;- Destination element: &apos;voda-0510-car-pooling-req-05_06/src/main/java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     MemberCar.java&#x0D;&#x0A;     Car.java&#x0D;&#x0A;     Member.java&#x0D;&#x0A;     TestCarPOolingReq3.java" description="Copy compilation units" destination="=voda-0510-car-pooling-req-05_06/src\/main\/java" element1="/src\/main\/java&lt;{MemberCar.java" element2="/src\/main\/java&lt;{Car.java" element3="/src\/main\/java&lt;{Member.java" element4="/src\/main\/java&lt;{TestCarPOolingReq3.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1697196504447" units="4" version="1.0"/>
+</session>

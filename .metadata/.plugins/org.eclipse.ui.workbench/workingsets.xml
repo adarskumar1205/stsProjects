@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1695378546493_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1695378546510_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1697795295145_3" label="" name="">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/01bankapp-without-spring" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/02xml-di-multipleconfigfiles-start" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/way2learnonline-parent" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1699009217500_4" label="SpringRESTAPIDemo1" name="SpringRESTAPIDemo1">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/working" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1695378555440_2" label="Window Working Set" name="Aggregate for window 1695378555439"/>
+</workingSetManager>

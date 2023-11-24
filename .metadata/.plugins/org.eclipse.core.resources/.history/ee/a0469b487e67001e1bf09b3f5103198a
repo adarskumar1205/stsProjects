@@ -1,0 +1,144 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class TestCarPoolingReq2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		
+		while(true) {
+			System.out.println("Menu:");
+			System.out.println(" 1) Add a Member\n"
+					+ " 2) Add a Car\n"
+					+ " 3) Assign Car to Member (Assume valid data is supplied)\n"
+					+ " 4) Cars Owned\n"
+					+ " 5) Exit");
+			
+			int option=scanner.nextInt();
+			
+			switch(option) {
+			case 1 : Member.memberList.add(createMember(scanner));
+					break;
+			case 2 : Car.cars.add(createCarObject(scanner));
+					break;
+			case 3 : Member.carList.add(createMemberCar(scanner));
+					break;
+					
+			case 4 : System.out.println("member id");
+				long memberId = scanner.nextLong();
+					 scanner.nextLine();
+					 Member.display(memberId);
+					break;
+			default : return;
+			}
+		}
+		
+		
+
+		
+	}
+	
+	private static MemberCar createMemberCar(Scanner scanner) {
+		System.out.println("member car id:");
+		long id=scanner.nextLong();
+		scanner.nextLine();
+		
+		System.out.println("member id:");
+		long memberId=scanner.nextLong();
+		scanner.nextLine();
+		
+		System.out.println("car id:");
+		long carId=scanner.nextLong();
+		scanner.nextLine();
+		
+		System.out.println("car registration:");
+		String carRegistrationNumber=scanner.nextLine();
+		
+		System.out.println("color:");
+		String carColor=scanner.nextLine();
+		
+		Member member1 = Member.findMember(memberId);
+		Car car1 = Car.findCar(carId);
+		
+			
+		return new  MemberCar(id, member1, car1, carRegistrationNumber, carColor);
+						
+		
+	}
+	private static Car createCarObject(Scanner scanner) {
+		System.out.println("id:");
+		long id=scanner.nextLong();
+		scanner.nextLine();
+		
+		System.out.println("name:");
+		String name=scanner.nextLine();
+		
+		System.out.println("model:");
+		String model=scanner.nextLine();
+		
+		System.out.println("makeYear:");
+		Integer makeYear=scanner.nextInt();
+		scanner.nextLine();
+		
+		System.out.println("company:");
+		String company=scanner.nextLine();
+		
+		System.out.println("comfort level:");
+		Integer comfortLevel=scanner.nextInt();
+		scanner.nextLine();
+			
+		return new  Car(id, name, model, makeYear, company, comfortLevel);
+						
+		
+	}
+	
+	
+	private static Member createMember(Scanner scanner){
+		System.out.println("id:");
+		long id=scanner.nextLong();
+		scanner.nextLine();
+		
+		System.out.println("first name:");
+		String firstName=scanner.nextLine();
+		
+		System.out.println("last name:");
+		String lastName=scanner.nextLine();
+		
+		System.out.println("email:");
+		String email=scanner.nextLine();
+		
+		System.out.println("contact number:");
+		String contactNumber=scanner.nextLine();
+		
+		System.out.println("license number:");
+		String licenseNumber=scanner.nextLine();
+		
+		System.out.println("license start date:");
+		String licenseStartDate=scanner.nextLine();
+		
+		System.out.println("license expiry date:");
+		String licenseExpiryDate=scanner.nextLine();
+		
+	
+		try {
+			Date startDate = new SimpleDateFormat("dd-mm-yyyy").parse(licenseStartDate);
+			Date expiryDate = new SimpleDateFormat("dd-mm-yyyy").parse(licenseExpiryDate);
+			
+			
+			return new Member(id, firstName, lastName, email, contactNumber, licenseNumber,
+						startDate, expiryDate);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+			return null;
+		}
+	}
+
+}

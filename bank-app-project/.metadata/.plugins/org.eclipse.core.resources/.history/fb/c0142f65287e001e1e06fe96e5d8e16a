@@ -1,0 +1,12 @@
+package com.demo;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@FeignClient(name="LOAN-SERVICE")
+public interface LoanApiClient {
+	@GetMapping("/{loanNumber}")
+	public LoanResponseDto getLoan(@PathVariable("loanNumber") String loanNumber);
+
+}

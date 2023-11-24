@@ -1,0 +1,34 @@
+package com.demo;
+
+
+public class AccountResponseDto {
+	private Account account;
+	private LoanDto loanDto;
+	private CardDto cardDto;
+	
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+	public LoanDto getLoanDto() {
+		return loanDto;
+	}
+
+	public void setLoanDto(LoanDto loanDto) {
+		this.loanDto = loanDto;
+	}
+
+	public CardDto getCardDto() {
+		return cardDto;
+	}
+
+	public void setCardDto(CardDto cardDto) {
+		this.cardDto = cardDto;
+	}
+	
+
+}

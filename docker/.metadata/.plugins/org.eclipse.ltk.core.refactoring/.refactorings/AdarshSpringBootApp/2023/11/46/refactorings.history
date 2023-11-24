@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;HelloController.java&apos; to &apos;AdarshSpringBootApp-1/src/main/java/com.demo&apos;&#x0D;&#x0A;- Original project: &apos;AdarshSpringBootApp&apos;&#x0D;&#x0A;- Destination element: &apos;AdarshSpringBootApp-1/src/main/java/com.demo&apos;&#x0D;&#x0A;- Original element: &apos;com.demo.HelloController.java&apos;" description="Copy compilation unit" destination="=AdarshSpringBootApp-1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.demo" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.demo{HelloController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1700197904295" units="1" version="1.0"/>
+</session>
